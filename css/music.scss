@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: 0;
+}
+html{
+    font-size: 100px;
+}
+body{
+    font-size: 30px;
+    font-family: "微软雅黑";
+    background:url(../img/beijing2.jpeg);
+}
+$screen-size:320px,360px,375px,412px,414px;
+$design-size:640px;
+@each $w in $screen-size{
+    @media screen and (min-width:#{$w}){
+        html{
+            font-size: 100px * $w/$design-size;
+        }
+    }
+}
+//@font-face {
+//font-family: 'iconfont';  /* project id："174933" */
+//src: url('http://at.alicdn.com/t/font_t5bn8r3ekz6ko6r.eot');
+//src: url('http://at.alicdn.com/t/font_t5bn8r3ekz6ko6r.eot') format('embedded-opentype'),
+//url('http://at.alicdn.com/t/font_t5bn8r3ekz6ko6r.woff') format('woff'),
+//url('http://at.alicdn.com/t/font_t5bn8r3ekz6ko6r.ttf') format('truetype'),
+//url('http://at.alicdn.com/t/font_t5bn8r3ekz6ko6r.svg#iconfont') format('svg');
+//}
+//.icon{
+//  font-family: 'iconfont';
+//}
+#back{
+    width:100%;
+    height: 1rem;
+//  background: pink;
+    a{
+      font-size:0.8rem; 
+      color: #CCCCCC; 
+    }
+}
+#lists{
+    list-style: none;
+    font-size: 20px;
+    position: absolute;
+    top:0.8rem;
+    left: 0.2rem;
+    z-index: 10;
+    display: none;
+    background: #fff;
+}
+#lists li span{
+    margin: 15px;
+}
+#lists li span:first-child{
+    font-size: 24px;
+}
+.active{
+    color:red;
+    background: pink;
+}
+#topic{
+    font-size: 0.4rem;
+    text-align: center;
+}
+#ban{
+    width: 100%;
+    height: 3rem;    
+    #yuan{
+        height: 3rem;
+        margin: 0.1rem auto;
+        width:3rem;
+        border-radius: 50%;
+        box-shadow: 0 0 4px #C3B0B1;
+        background:url(../img/zhou.jpg);
+        background-position:-.1rem -.2rem ;
+    }
+}
+#word{
+    width:100%;
+    height: 3rem;
+    overflow:hidden;
+    p{
+       height: 100%;
+       width:4rem;
+       margin:0 auto;
+       font-size:0.3rem; 
+       padding: 0.2rem;
+       text-align: center;
+       line-height:0.5rem ;
+    }
+    h5{
+       font-size: 20px; 
+       padding: 0.15rem 0.2rem;
+    }
+    h6{
+       padding: 0.15rem 0.2rem; 
+    }
+}
+@keyframes yun{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-300%);
+    }
+}
+#word P{
+    animation: yun 60s linear 0s infinite;
+}
+#audio_box{
+    width: 5.5rem;
+    height: 1rem;
+    margin: 0.2rem auto;
+    div{
+        float:left;
+        width:20%;
+        height: 1rem;
+        text-align: center;
+        line-height: 1rem;
+        color: #CCCCCC;
+    }
+    #vioce{
+        font-size: 0.5rem;
+    }
+    #voice_box{
+        height: 2.5rem;
+        width: 0.1rem;
+        background: #000;
+        position: absolute;
+        left:0.5rem;
+        top:-(2.2rem);
+        display: none;
+        #vi{
+            height: 0.4rem;
+            width: 0.4rem;
+            border-radius: 50%;
+            background:rgba(255,0,0,0.5);
+            position: absolute;
+            left: -.15rem;
+            bottom:2.25rem;
+        }
+    }
+    #vioce:hover #voice_box{
+        display: block;
+    }
+    #last{
+        font-size: 0.5rem;
+    }
+    #play{
+        font-size: 0.9rem;
+    }
+    #next{
+        font-size: 0.5rem;
+    }
+    #collect{
+        font-size: 0.5rem;
+    }
+}
+#process{
+    width: 5rem;
+    height: 0.1rem;
+    background: #000000;
+    margin: 0.4rem auto;
+    #pi{
+        height: 0.4rem;
+        width: 0.4rem;
+        border-radius: 50%;
+        background:rgba(255,0,0,0.5);
+        position: absolute;
+        left: -.2rem;
+        top:-.15rem;
+    }
+}
+#start_time{
+    padding-left: 0.5rem;
+    font-size: 0.3rem;
+    float: left;
+}
+#duration{
+    padding-right: 0.5rem;
+    font-size: 0.3rem;
+    float: right;
+}
+
+
+
+
+
+
+

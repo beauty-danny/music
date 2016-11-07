@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name='viewport' content="width=device-width">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/music.css" />
+		<script type="text/javascript" src='js/jquery.js'></script>
+		<script type="text/javascript" src='js/animate.js'></script>
+		<script type="text/javascript" src='js/music.js'></script>
+		<!-- Add to homescreen for Safari on Ios -->
+	  <meta name="apple-mobile-web-app-capable" content="yes">
+	  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	  <meta name="apple-mobile-web-app-title" content="todo">
+	  <link rel="apple-touch-icon" href="img/logo.png">
+
+	  <!-- Add to homescreen for Chrome on Android -->
+	  <meta name="mobile-web-app-capable" content="yes">
+	  <meta name="application-name" content="todo">
+	  <meta name="theme-color" content="#2F3BA2">
+	  <link rel="icon" sizes="192x192" href="img/logo.png">
+	</head>
+	<style>
+		@font-face {font-family: "iconfont";
+          src: url('icon/iconfont.eot'); /* IE9*/
+          src: url('icon/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('icon/iconfont.woff') format('woff'), /* chrome, firefox */
+          url('icon/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+          url('icon/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+
+        .icon{
+          font-family:"iconfont" !important;
+        }
+	</style>
+	<body>
+		<audio src='music/二珂 - 走在冷风中.mp3' id='audio'></audio>
+		<div id='back'>
+			<a href="javascript:;" class='icon'>&#xe616;</a>			
+		</div>
+		<ul id='lists'>123</ul>
+		<div id='topic'>行走在冬夜的冷风中</div>
+		<div id="ban">
+			<div id="yuan"></div>
+		</div>
+		<div id="word">
+			<p>我以为留下来没有错<br/>				
+				我以为<br/>
+                                            努力过你会懂<br/>
+				怎么连落叶<br/>
+				都在嘲笑我<br/>
+				要假装坚强的走<br/>
+				行走在冬夜的冷风中<br/>
+				飘散的<br/>
+				踩碎的<br/>
+				都是梦<br/>
+				孤单单这一刻<br/>
+				如何<br/>
+				确定你曾爱过我<br/>
+				停留在冬夜的冷风中<br/>				
+			</p>
+		</div>
+		<div id="audio_box">
+			<div id='voice' class='icon'>&#xe66a;</div>
+			<div id='voice_box'>
+				<div id='vi'></div>
+			</div>
+			<div id='last' class='icon'>&#xe67e;</div>
+			<div id='play' class='icon'>&#xe713;</div>
+			<div id='next' class='icon'>&#xe67f;</div>
+			<div id='collect' class='icon'>&#xe64b;</div>			
+		</div>
+		<div id="process">
+			<div id="pi"></div>
+		</div>
+		<div id='start_time'>0:00</div>
+		<div id="duration">5555</div>
+	</body>
+
+</html>
