@@ -108,8 +108,14 @@ body {
   width: 3rem;
   border-radius: 50%;
   box-shadow: 0 0 4px #C3B0B1;
-  background: url(../img/zhou.jpg);
-  background-position: -.1rem -.2rem;
+}
+
+#ban #yuan img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 3rem;
+  border-radius: 50%;
 }
 
 #word {
